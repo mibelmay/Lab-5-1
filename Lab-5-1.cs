@@ -6,6 +6,7 @@ namespace Labs
     {
         public static void Main()
         {
+            double previousInput = 0;
             while (true)
             {
                 string input = Console.ReadLine();
@@ -15,9 +16,13 @@ namespace Labs
                 if (success)
                 {
                     Console.WriteLine((char)intMumber);
+                    previousInput = intMumber;
                     continue;
                 }
-                break;
+                double doubleNumber = double.Parse(input);
+                if (Math.Abs(doubleNumber - previousInput) < 1e-9)
+                    break;
+                previousInput = doubleNumber;
 
             }
         }
