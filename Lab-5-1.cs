@@ -6,7 +6,7 @@ namespace Labs
     {
         public static void Main()
         {
-            double previousInput = 0;
+            double previousInput = double.NaN;
             while (true)
             {
                 string input = Console.ReadLine();
