@@ -6,7 +6,20 @@ namespace Labs
     {
         public static void Main()
         {
-            Console.WriteLine("Hello git !!!!!");
+            while (true)
+            {
+                string input = Console.ReadLine();
+                if (input == "q")
+                    break;
+                bool success = int.TryParse(input, out int intMumber);
+                if (success)
+                {
+                    Console.WriteLine((char)intMumber);
+                    continue;
+                }
+                break;
+
+            }
         }
     }
 }
