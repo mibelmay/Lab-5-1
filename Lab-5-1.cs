@@ -9,6 +9,7 @@ namespace Labs
             double previousInput = double.NaN;
             while (true)
             {
+                Console.WriteLine("Введите число: ");
                 string input = Console.ReadLine();
                 if (input == "q")
                     break;
@@ -21,7 +22,10 @@ namespace Labs
                 }
                 double doubleNumber = double.Parse(input);
                 if (Math.Abs(doubleNumber - previousInput) < 1e-9)
+                {
+                    Console.WriteLine("Введенное число равно предыдущему");
                     break;
+                }
                 previousInput = doubleNumber;
 
             }
