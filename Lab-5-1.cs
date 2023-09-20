@@ -11,7 +11,7 @@ namespace Labs
             
             while (true)
             {
-                Console.WriteLine("Введите число: ");
+                Console.WriteLine("Введите число пожалуйста прошу вас иначе меня чикнут: ");
                 string input = Console.ReadLine();
                 
                 if (input == "q") break;
@@ -27,7 +27,7 @@ namespace Labs
 
                 if (Math.Abs(doubleNumber - previousInput) < 1e-9)
                 {
-                    Console.WriteLine("Введенное число равно предыдущему");
+                    Console.WriteLine("Введенное число равно предыдущему!!!!!!!внимательнее!!");
                     break;
                 }
 
